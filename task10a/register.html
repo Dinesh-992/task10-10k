@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registation Form</title>
+</head>
+<body>
+    <fieldset>
+    <center>
+        <h1><u>Registation Form</u></h1>
+   
+    </center>
+    <form action="./register_success.html" method="post">
+        <fieldset>
+            <legend><b>Personal Details</b></legend>
+            <label for="First Name">First Name</label>
+            <input type="text" name="firstname" id="First Name"placeholder="Enter Here" autofocus required maxlength="15"></input><br>
+            <label for="Middle Name">Middle Name</label>
+            <input type="text" name="middlename" id="Middle Name"placeholder="Enter Here" autofocus maxlength="15"></input> (optional)<br>
+            
+            <label for="Last Name">Last Name</label>
+            <input type="text" name="lastname" id="Last Name"placeholder="Enter Here" autofocus required maxlength="25"></input><br>
+            <label>Gender</label>
+            <input type="radio" name="gender" id="male" value="male" >Male</input>
+        <label for="male"></label>
+        <input type="radio" id="female" name="gender" value="female">Female</input><br>
+       <label for="female"></label>
+       <label for="DOB">Date of Birth</label>
+       <input type="date" name="Date of birth" id="DOB"></input><br>
+       <label for="phonenum">Phone number</label>
+       <input type="number" name="phone_number" id="phonenum"placeholder="Enter here"  max="10"></input><br>
+    <label for="email">Email ID</label>
+    <input type="email" name="email_address" id="email" required></input><br>
+       <label for="pancard">PAN Card</label>
+       <input type="text" name="pan_card" id="pancard"placeholder="Enter here"  ></input> (optional)<br>
+       <label for="aadharcard">Aadhar Card</label>
+       <input type="text" name="Aadhar_card" id="aadharcard"placeholder="Enter here"  ></input> (optional)<br>
+       <label for="nationality">Nationality</label>
+       <input type="text" id="nationality" name="nationality" required></input><br>
+       <label for="City">City</label>
+       <input type="text" id="City" name="city" required></input>
+    </fieldset>
+    <fieldset>
+        <legend><b>Login Information</b></legend>
+        <label for="username">User Id</label>
+        <input type="text" name="user_id" id="userid" required maxlength="11"><br>
+        <label for="password">Password</label>
+        <input type="password" name="user_password" id="password" required minlength="4"><br>
+        
+    
+    </fieldset>
+    <center>
+        
+        <input type="submit" value="Register"></input>
+    </center>
+    </form>
+</fieldset>
+
+</body>
+</html>
